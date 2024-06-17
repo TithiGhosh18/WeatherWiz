@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWiz Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    
+        <div class="heading">
+            <img src="newgame/Weathericon.png" alt="logo" width="70px" height="70px">
+            <h1 class="weather-heading">WeatherWiz</h1>
+        </div>
+        <div class="links">
+            <a class="link" href="index2.html" id="howtouse">How to use?</a>
+            <a class="link" id="linkss" href="#">Popular cities</a>
+            <ul id="dropdown-products">
+                <li><a href="#" id="places1">Mumbai</a></li>
+                <li><a href="#"id="places2">Kolkata</a></li>
+                <li><a href="#"id="places3">Rajasthan</a></li>
+                <li><a href="#"id="places4">New Delhi</a></li>
+                <li><a href="#"id="places5">Kashmir</a></li>
+                <li><a href="#"id="places6">Chennai</a></li>
+              </ul>
+            </li>
+        </div>
+        <div class="search">
+            <input type="text" id="searchbar" placeholder="Seach cities">
+            <img class="submit" id="searchButton" src="newgame/arrow.png" width="40px" height="40px"></img>
+        </div>
+   
+</header>
+    <div class="main_body">
+        <div class="todayweather">
+            
+            <h2>Weather today</h1>
+                <h3 class="place" title="view place in goole map">------</h3>
+                <p id="Localtime" style="font-size: xx-small; padding: 0%; margin: 0%;">--/--/----</p>
+            <p class="current-temp-written">Current temperature</p>
+            <div class="temp">
+            <div class="tp">
+            <h1 class="current-temp" style="margin-top: 3px; margin-bottom: 2px;">--</h1><p id="highlow">--/--</p></div>
+            <div class="feel">
+            <img id="thermo-icon" src="newgame/images-removebg-preview.png" alt="icon">
+            <p id="feels-like">feels like ---</p>
+             </div>
+            </div>
+            <div class="condition">
+                <img id="weathericon" src="newgame/resizeloading.png.com/weather/64x64/day/116.pnnewgame/resizeloading.png" alt="image">
+                <p id="conditiontext">---</p>
+            </div>
+            <div class="textbox">
+                <p id="textboxinnervalue">---</p>
+            </div>
+            <div class="forecast-container">
+                <h1>Hourly Weather Forecast</h1>
+                <div class="hourly-forecast">
+                    <div class="forecast-hour">
+                        <p class="hour1">12:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon0">
+                        <p class="temperature0">--</p>
+                        <p class="description0">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour2">1:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon1">
+                        <p class="temperature1">--</p>
+                        <p class="description1">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour2">2:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon2">
+                        <p class="temperature2">--</p>
+                        <p class="description2">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour4">3:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon3">
+                        <p class="temperature3">--</p>
+                        <p class="description3">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour6">4:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon4">
+                        <p class="temperature4">--</p>
+                        <p class="description4">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour7">5:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon5">
+                        <p class="temperature5">--</p>
+                        <p class="description5">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">6:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon6">
+                        <p class="temperature6">--</p>
+                        <p class="description6">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">7:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon7">
+                        <p class="temperature7">--</p>
+                        <p class="description7">---</p>i
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">8:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon8">
+                        <p class="temperature8">20°C</p>
+                        <p class="description8">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">9:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon9">
+                        <p class="temperature9">--</p>
+                        <p class="description9">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">10:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon10">
+                        <p class="temperature10">--</p>
+                        <p class="description10">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">11:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon11">
+                        <p class="temperature11">--</p>
+                        <p class="description11">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">12:00 PM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon12">
+                        <p class="temperature12">--</p>
+                        <p class="description12">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">1:00 PM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon13">
+                        <p class="temperature13">--</p>
+                        <p class="description13">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">2:00 AM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon14">
+                        <p class="temperature14">--</p>
+                        <p class="description14">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">3:00 PM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon15">
+                        <p class="temperature15">--</p>
+                        <p class="description15">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">4:00 PM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon16">
+                        <p class="temperature16">--</p>
+                        <p class="description16">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">5:00 PM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon17">
+                        <p class="temperature17">--</p>
+                        <p class="description17">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">6:00 PM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon18">
+                        <p class="temperature18">--</p>
+                        <p class="description18">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">7:00 PM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon19">
+                        <p class="temperature19">--</p>
+                        <p class="description19">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">8:00 PM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon20">
+                        <p class="temperature20">--</p>
+                        <p class="description20">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">9:00 PM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon21">
+                        <p class="temperature21">--</p>
+                        <p class="description21">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">10:00 PM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon22">
+                        <p class="temperature22">--</p>
+                        <p class="description22">---</p>
+                    </div>
+                    <div class="forecast-hour">
+                        <p class="hour">11:00 PM</p>
+                        <img src="newgame/resizeloading.png" alt="Weather Icon" class="weather-icon23">
+                        <p class="temperature23">--</p>
+                        <p class="description23">---</p>
+                    </div>
+                   
+                    <!-- Repeat for more hours -->
+                </div>
+            </div>
+            <div class="extrainfo">
+                <div class="uv">
+                    <img src="newgame/uvicon.png" alt="icon"  width="40px" height="40px">
+                    <p style="padding: 0%; margin: 0%;"> UV</p>
+                    <div class="uvvalue">
+                        <p class="uvindex" style="font-weight:400; font-size: medium; margin: 0%;">-</p>
+                        <p id="msg" style="margin: 0%">very weak</p>
+                    </div>
+                </div>
+
+                <div class="humidity">
+                    <img src="newgame/humidity-icon.png" alt="icon"  width="40px" height="40px" >
+                    <p style="padding: 0%; margin: 0%;">humidity</p>
+                    <p tyle="padding: 0%; margin: 0%;"id="humidityvalue">-</p>
+                </div>
+                <div class="airpressure">
+                    <img src="newgame/airpressure.png" alt="icon" width="48px" height="40px">
+                    <p style="padding: 0%; margin: 0%;">Air Pressure</p>
+                    <div class="apvalue">
+                        <p id="actual-value"style="font-weight:400; font-size: medium; margin: 0%;">-</p>
+                        
+                        <p id="mb"style=" font-size: medium; margin: 0%;">mb</p>
+                    </div>
+                </div>
+                <div class="visibility">
+                    <img src="newgame/visibility.png" alt="icon" width="40px" height="40px" >
+                    <p  style="padding: 0%; margin: 0%;">visibility</p>
+                    <div class="v-value">
+                        <p  style="padding: 2px; margin: 0%;" id="vac-value">-</p>
+                        <p style="padding: 2px; margin: 0%;">km</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sun_rise_set">
+                <div class="sunrise">
+                    <img src="newgame/sunrise.png" alt="icon" width="40px" style="padding: 0%; margin: 0%;">
+                    <p  style="padding: 2px; margin: 0%;">Sunrise</p>
+                    <p id="risetime"  style="padding: 2px; margin: 0%;"> --</p>
+                </div>
+                <div class="sunset">
+                    <img src="newgame/sunset.png" alt="icon" width="40px" style="padding: 0%; margin: 0%;">
+                    <p style="padding: 2px; margin: 0%;">Sunset</p>
+                    <p id="settime"style="padding: 2px; margin: 0%;">--</p>
+                </div>
+            </div>
+            <div class="lifestylelink">
+                <a href="https://weather.com/en-GB/forecast/allergy/l/681e08d44bd4bbc712b1b883b991e0c79815df15d068c6d3c7287bb69fe31c7a?par=oppo_widget&frontCode=2.0&infoEnable=true">Lifestyle Tips</a>
+            </div>
+            
+        </div>
+
+
+
+        <!-- tomorrows weather -->
+        <div class="tomorrowweather">
+            <h2>Weather tomorrow</h1>
+            <h3 class="place2" title="view place on google map">----</h3>
+            <p id="Localtime2" style="font-size: xx-small; padding: 0%; margin: 0%;">--/--/----</p>
+                <p class="avg-temp-written">Average temperature</p>
+                <div class="temp">
+                <div class="tp">
+                <h1 class="Avg-temp" style="margin-top: 3px; margin-bottom: 2px;">--</h1><p id="Tom-highlow">--/--</p></div>
+                <div class="Tom-feel">
+                <img id="Tom-thermo-icon" src="newgame/images-removebg-preview.png" alt="icon" width="40px" height="40px">
+                <p id="Tom-feels-like">feels like --</p>
+                 </div>
+                </div>
+                <div class="Tom-condition">
+                    <img id="tom-weather-condition" src="newgame/resizeloading.png.com/weather/64x64/day/116.pnnewgame/resizeloading.png" alt="image">
+                    <p id="Tom-conditiontext">------</p>
+                </div>
+                <div class="Tom-textbox">
+                    <p id ="tom_innertextvalue">--</p>
+                </div>
+                <div class="Tom-forecast-container">
+                    <h1>Hourly Weather Forecast</h1>
+                    <div class="Tom-hourly-forecast">
+                        <div class="Tom-forecast-hour">
+                            <p class="Tom-hour">12:00 AM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon0">
+                            <p class="tomtemperature0">--</p>
+                            <p class="tomdescription0">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">1:00 AM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon1">
+                            <p class="tomtemperature1">--</p>
+                            <p class="tomdescription1">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">2:00 AM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon2">
+                            <p class="tomtemperature2">--</p>
+                            <p class="tomdescription2">---</p>
+                        </div>
+                        <div class="forecast-hour">
+                            <p class="hour">3:00 AM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon3">
+                            <p class="tomtemperature3">--</p>
+                            <p class="tomdescription3">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">4:00 AM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon4">
+                            <p class="tomtemperature4">--</p>
+                            <p class="tomdescription4">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">5:00 AM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon5">
+                            <p class="tomtemperature5">--</p>
+                            <p class="tomdescription5">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">6:00 AM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon6">
+                            <p class="tomtemperature6">--</p>
+                            <p class="tomdescription6">---</p>
+                        </div>
+                        
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">7:00 AM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon7">
+                            <p class="tomtemperature7">--</p>
+                            <p class="tomdescription7">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">8:00 AM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon8">
+                            <p class="tomtemperature8">--</p>
+                            <p class="tomdescription8">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">9:00 AM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon9">
+                            <p class="tomtemperature9">--</p>
+                            <p class="tomdescription9">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">10:00 AM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon10">
+                            <p class="tomtemperature10">--</p>
+                            <p class="tomdescription10">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">11:00 AM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon11">
+                            <p class="tomtemperature11">--</p>
+                            <p class="tomdescription11">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">12:00 PM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon12">
+                            <p class="tomtemperature12">--</p>
+                            <p class="tomdescription12">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">1:00 PM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon13">
+                            <p class="tomtemperature13">--</p>
+                            <p class="tomdescription13">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">2:00 PM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon14">
+                            <p class="tomtemperature14">--</p>
+                            <p class="tomdescription14">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">3:00 PM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon15">
+                            <p class="tomtemperature15">--</p>
+                            <p class="tomdescription15">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">4:00 PM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon16">
+                            <p class="tomtemperature16">--</p>
+                            <p class="tomdescription16">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">5:00 PM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon17">
+                            <p class="tomtemperature17">--</p>
+                            <p class="tomdescription17">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">5:00 PM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon18">
+                            <p class="tomtemperature18">--</p>
+                            <p class="tomdescription18">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">7:00 PM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon19">
+                            <p class="tomtemperature19">--</p>
+                            <p class="tomdescription19">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">8:00 PM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon20">
+                            <p class="tomtemperature20">--</p>
+                            <p class="tomdescription20">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">9:00 PM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon21">
+                            <p class="tomtemperature21">--</p>
+                            <p class="tomdescription21">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">10:00 PM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon22">
+                            <p class="tomtemperature22">--</p>
+                            <p class="tomdescription22">---</p>
+                        </div>
+                        <div class="Tom-forecast-hour">
+                            <p class="hour">11:00 PM</p>
+                            <img src="newgame/resizeloading.png" alt="Weather Icon" class="tomweathericon23">
+                            <p class="tomtemperature23">--</p>
+                            <p class="tomdescription23">---</p>
+                        
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="extrainfo">
+                    <div class="uv">
+                        <img src="newgame/uvicon.png" alt="icon"  width="40px" height="40px">
+                        <p style="padding: 0%; margin: 0%;"> UV</p>
+                        <div class="uvvalue">
+                            <p class="uvindex_2" style="font-weight:400; font-size: medium; margin: 0%;">-</p>
+                            <p id="msg2" style="margin: 0%">---</p>
+                        </div>
+                    </div>
+    
+                    <div class="humidity">
+                        <img src="newgame/humidity-icon.png" alt="icon"  width="40px" height="40px" >
+                        <p style="padding: 0%; margin: 0%;">humidity</p>
+                        <p tyle="padding: 0%; margin: 0%;"id="humidityvalue2">-</p>
+                    </div>
+                    <div class="airpressure">
+                        <img src="newgame/airpressure.png" alt="icon" width="48px" height="40px">
+                        <p style="padding: 0%; margin: 0%;">Air Pressure</p>
+                        <div class="apvalue">
+                            <p id="actual-value2"style="font-weight:400; font-size: medium; margin: 0%;">-</p>
+                            
+                            <p id="msg2"style=" font-size: medium; margin: 0%;">mb</p>
+                        </div>
+                    </div>
+                    <div class="visibility">
+                        <img src="newgame/visibility.png" alt="icon" width="40px" height="40px" >
+                        <p  style="padding: 0%; margin: 0%;">visibility</p>
+                        <div class="v-value">
+                            <p  style="padding: 2px; margin: 0%;" id="vac-value2">-</p>
+                            <p style="padding: 2px; margin: 0%;">km</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sun_rise_set">
+                    <div class="sunrise">
+                        <img src="newgame/sunrise.png" alt="icon" width="40px" style="padding: 0%; margin: 0%;">
+                        <p  style="padding: 2px; margin: 0%;">Sunrise</p>
+                        <p id="risetime11"  style="padding: 2px; margin: 0%;">--</p>
+                    </div>
+                    <div class="sunset">
+                        <img src="newgame/sunset.png" alt="icon" width="40px" style="padding: 0%; margin: 0%;">
+                        <p style="padding: 2px; margin: 0%;">Sunset</p>
+                        <p id="settime22"style="padding: 2px; margin: 0%;">---</p>
+                    </div>
+                </div>
+                <div class="lifestylelink">
+                    <a href="https://weather.com/en-GB/forecast/allergy/l/681e08d44bd4bbc712b1b883b991e0c79815df15d068c6d3c7287bb69fe31c7a?par=oppo_widget&frontCode=2.0&infoEnable=true">Lifestyle Tips</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+   <footer>
+    <div class="footermain">
+    <div class="company">
+       
+        <h3 id="weatherwiz">WeatherWiz</h3>
+        <p id="para">Your go-to source for accurate and up-to-date weather forecasts, helping you plan your day with confidence. Stay ahead of the weather with our reliable and user-friendly platform.</p>
+    </div>
+    <div class="info">
+    <ul>
+        <li>
+            <a href="#">Home</a>
+            <a href="index3.html">14 day forecast</a>
+            <a href="https://www.weatherapi.com/">Used API</a>
+            <a href="index2.html">Help</a>
+        </li>
+    </ul>
+</div>
+    <div class="getintouch">
+        <h3>Get in touch</h3>
+        <div class="lastmsg">
+        <textarea name="messege" id="messege"> enter msg and contact info</textarea>
+        <button id="msgbtn" type="submit" style="margin: 3px; margin-bottom: 14px;">submit</button>
+    </div>
+</div>
+<div class="owner">
+    <h3>Made by</h3>
+    <a href="#">Tithi Ghosh</a>
+    <ul>
+        <li>
+            <a href="https://www.linkedin.com/in/tithi-ghosh04/"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="linkdln" width="20px" height="20px"></a>
+            <a href="https://www.facebook.com/profile.php?id=100072050887304"><img src="newgame/facebookicon.png" alt="fb" width="20px" height="20px" style="bottom: 0%;"></a>
+            <a href="https://www.instagram.com/tithighosh04/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="insta" width="20px" height="20px"></a>
+            <a href="https://github.com/TithiGhosh18"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" width="20px" height="20px"></a>
+        </li>
+    </ul>
+</div>
+</div>
+   
+<div class="copyright">
+    <p>copyright©-WeatherWiz2024 All rights reserved</p>
+</div>
+   </footer>
+<script src="new.js"></script>
+</body>
+
+</html>

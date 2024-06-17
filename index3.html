@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWiz-14 day forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+    
+        <div class="heading">
+            <img src="newgame/Weathericon.png" alt="logo" width="70px" height="70px">
+            <h1 class="weather-heading">WeatherWiz</h1>
+        </div>
+        <div class="links">
+            <a class="link" href="index2.html" id="howtouse">How to use?</a>
+            <a class="link" id="linkss" href="#">Popular cities</a>
+            <ul id="dropdown-products">
+                <li><a href="#" id="places1">Mumbai</a></li>
+                <li><a href="#"id="places2">Kolkata</a></li>
+                <li><a href="#"id="places3">Rajasthan</a></li>
+                <li><a href="#"id="places4">Delhi</a></li>
+                <li><a href="#"id="places5">Kashmir</a></li>
+                <li><a href="#"id="places6">Chennai</a></li>
+              </ul>
+            </li>
+        </div>
+        <div class="search">
+            <input type="text" id="searchbar" placeholder="Seach cities">
+            <img class="submit" id="searchButton" src="newgame/arrow.png" width="40px" height="40px"></img>
+        </div>
+   
+</header>
+<div class="mainbody">
+    <div class="location" style="opacity: 1; max-height: max-content;">
+        <div class="locationanddate">
+        <h1 id="actuallocation">----,----,----</h1>
+        <p id="localtime">00-00-0000 00:00</p>
+        <p id="lastupdate"> Last updated 00.00</p>
+    </div>              
+        <img id="locationimage" src="newgame/resizeloading.png" alt="icon" width="45px" height="45px" style="padding-top: 10px; margin: 10px;">
+        <div class="temparature">
+        <h1 id="temp">--</h1>
+        <div class="feellike">
+            <p >feels like</p>
+            <p id="feelvalue">--</p>
+        </div>
+        <p style="font-size:x-small;margin: 0%; ">Now</p>
+       
+    </div>
+    </div>
+    <div class="forecast">
+        <div class="datedaynight" style="margin-top: 20px;">
+            <p class="date0">01-01-2001</p>
+            <div class="dayforecast">Day
+                <div class="container">
+                <img id="dayicon0" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="daytemp0">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="dayfeelvalue0">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="daywindvalue0" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="dayHumidityvalue0" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="dayVisibilityvalue0" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="daypop0" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+            <div class="nightforecast">Night
+                <div class="container2">
+                <img id="nighticon0" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="nighttemp0">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="nightfeelvalue0">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="nightwindvalue0" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="nightHumidityvalue0" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="nightVisibilityvalue0" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="nightpop0" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+    </div>
+    <div class="forecast">
+        <div class="datedaynight">
+            <p class="date1">01-01-2001</p>
+            <div class="dayforecast">Day
+                <div class="container">
+                <img id="dayicon1" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="daytemp1">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="dayfeelvalue1">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img  src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="daywindvalue1" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="dayHumidityvalue1" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="dayVisibilityvalue1" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="daypop1" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+            <div class="nightforecast">Night
+                <div class="container2">
+                <img id="nighticon1" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="nighttemp1">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="nightfeelvalue1">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="nightwindvalue1" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="nightHumidityvalue1" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="nightVisibilityvalue1" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="nightpop1" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+    </div>
+    <div class="forecast">
+        <div class="datedaynight">
+            <p class="date2">01-01-2001</p>
+            <div class="dayforecast">Day
+                <div class="container">
+                <img id="dayicon2" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="daytemp2">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="dayfeelvalue2">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="daywindvalue2" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="dayHumidityvalue2" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="dayVisibilityvalue2" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="daypop2" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+            <div class="nightforecast">Night
+                <div class="container2">
+                <img id="nighticon2" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="nighttemp2">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="nightfeelvalue2">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="nightwindvalue2" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="nightHumidityvalue2" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="nightVisibilityvalue2" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="nightpop2" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+    </div>
+    <div class="forecast">
+        <div class="datedaynight">
+            <p class="date3">01-01-2001</p>
+            <div class="dayforecast">Day
+                <div class="container">
+                <img id="dayicon3" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="daytemp3">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="dayfeelvalue3">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="daywindvalue3" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="dayHumidityvalue3" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="dayVisibilityvalue3" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="daypop3" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+            <div class="nightforecast">Night
+                <div class="container2">
+                <img id="nighticon3" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="nighttemp3">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="nightfeelvalue3">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="nightwindvalue3" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="nightHumidityvalue3" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="nightVisibilityvalue3" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> 14km</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="nightpop3" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+    </div>
+    <div class="forecast">
+        <div class="datedaynight">
+            <p class="date4">01-01-2001</p>
+            <div class="dayforecast">Day
+                <div class="container">
+                <img id="dayicon4" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                
+                <h1 id="daytemp4">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="dayfeelvalue4">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="daywindvalue4" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="dayHumidityvalue4" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="dayVisibilityvalue4" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="daypop4" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+            <div class="nightforecast">Night
+                <div class="container2">
+                <img  id="nighticon4" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="nighttemp4">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="nightfeelvalue4">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="nightwindvalue4" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="nightHumidityvalue4" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="nightVisibilityvalue4" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="nightpop4" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+    </div>
+    <div class="forecast">
+        <div class="datedaynight">
+            <p class="date5">01-01-2001</p>
+            <div class="dayforecast">Day
+                <div class="container">
+                <img  id="dayicon5" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="daytemp5">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="dayfeelvalue5">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="daywindvalue5" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="dayHumidityvalue5" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="dayVisibilityvalue5" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="daypop5" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+            <div class="nightforecast">Night
+                <div class="container2">
+                <img  id="nighticon5" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="nighttemp5">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="nightfeelvalue5">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="nightwindvalue5" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="nightHumidityvalue5" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="nightVisibilityvalue5" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="nightpop5" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+    </div>
+    <div class="forecast">
+        <div class="datedaynight">
+            <p class="date6">01-01-2001</p>
+            <div class="dayforecast">Day
+                <div class="container">
+                <img  id="dayicon6"src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="daytemp6">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="dayfeelvalue6">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="daywindvalue6" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="dayHumidityvalue6" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="dayVisibilityvalue6" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="daypop6" style="margin: 2px;">--</p>
+                </div>
+            </div>                                                                                                                                                                                                                                                                                                                                                             
+        </div>
+            <div class="nightforecast">Night
+                <div class="container2">
+                <img  id="nighticon6"src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="nighttemp6">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="nightfeelvalue6">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="nightwindvalue6" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="nightHumidityvalue6" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="nightVisibilityvalue6" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="nightpop6" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+    </div>
+    <div class="forecast">
+        <div class="datedaynight">
+            <p class="date7">01-01-2001</p>
+            <div class="dayforecast">Day
+                <div class="container">
+                <img  id="dayicon7"src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="daytemp7">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="dayfeelvalue7">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="daywindvalue7" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="dayHumidityvalue7" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="dayVisibilityvalue7" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="daypop7" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+            <div class="nightforecast">Night
+                <div class="container2">
+                <img  id="nighticon7"src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="nighttemp7">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="nightfeelvalue7">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windic on-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="nightwindvalue7" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="nightHumidityvalue7" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="nightVisibilityvalue7" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="nightpop7" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+    </div>
+    <div class="forecast">
+        <div class="datedaynight">
+            <p class="date8">01-01-2001</p>
+            <div class="dayforecast">Day
+                <div class="container">
+                <img  id="dayicon8"src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="daytemp8">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="dayfeelvalue8">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="daywindvalue8" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="dayHumidityvalue8" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="dayVisibilityvalue8" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="daypop8" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+            <div class="nightforecast">Night
+                <div class="container2">
+                <img  id="nighticon8"src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="nighttemp8">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="nightfeelvalue8">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="nightwindvalue8" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="nightHumidityvalue8" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="nightVisibilityvalue8" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="nightpop8" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+    </div>
+    <div class="forecast">
+        <div class="datedaynight">
+            <p class="date9">01-01-2001</p>
+            <div class="dayforecast">Day
+                <div class="container">
+                <img id="dayicon9" src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="daytemp9">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="dayfeelvalue9">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="daywindvalue9" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="dayHumidityvalue9" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="dayVisibilityvalue9" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="daypop9" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+            <div class="nightforecast">Night
+                <div class="container2">
+                <img  id="nighticon9"src="newgame/resizeloading.png" alt="icon" width="40px" height="40px" style="padding-top: 10px; margin: 10px;">
+                <h1 id="nighttemp9">--</h1>
+                <div class="forecastfeellike">
+                    <p>feels like</p>
+                    <p id="nightfeelvalue9">--</p>
+                </div>
+                <div class="forextainfo">
+                    <div class="wind">
+                        <img src="newgame/Windicon-removebg-preview.png" width="25px" height="25px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 70px;">Wind</p>
+                        <p id="nightwindvalue9" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Humidity">
+                        <img src="newgame/humidity-icon.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Humidity</p>
+                        <p id="nightHumidityvalue9" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                    <div class="Visibility">
+                        <img src="newgame/visibility.png" width="20px" height="20px" alt="icon">
+                        <p style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; width: 90px;">Visibility</p>
+                        <p id="nightVisibilityvalue9" style="margin-top: 0%; padding-left: 3px; margin-bottom: 2px; "> --</p>
+                    </div>
+                </div>
+                <div class="pop">
+                    <img src="https://cdn.icon-icons.com/icons2/2211/PNG/512/weather_rain_rainy_cloud_icon_134159.png" width="40px" height="40px" alt="icon">
+                    <p id="nightpop9" style="margin: 2px;">--</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+    </div>
+</div>
+<footer>
+    <div class="footermain">
+    <div class="company">
+       
+        <h3 id="weatherwiz">WeatherWiz</h3>
+        <p id="para">Your go-to source for accurate and up-to-date weather forecasts, helping you plan your day with confidence. Stay ahead of the weather with our reliable and user-friendly platform.</p>
+    </div>
+    <div class="info">
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+            <a href="index3.html">14 day forecast</a>
+            <a href="https://www.weatherapi.com/">Used API</a>
+            <a href="index2.html">Help</a>
+        </li>
+    </ul>
+</div>
+    <div class="getintouch">
+        <h3>Get in touch</h3>
+        <div class="lastmsg">
+        <textarea name="messege" id="messege"> enter msg and contact info</textarea>
+        <button id="msgbtn" type="submit" style="margin: 3px; margin-bottom: 14px;">submit</button>
+    </div>
+</div>
+<div class="owner">
+    <h3>Made by</h3>
+    <a href="#">Tithi Ghosh</a>
+    <ul>
+        <li>
+            <a href="https://www.linkedin.com/in/tithi-ghosh04/"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="linkdln" width="20px" height="20px"></a>
+            <a href="https://www.facebook.com/profile.php?id=100072050887304"><img src="newgame/facebookicon.png" alt="fb" width="20px" height="20px" style="bottom: 0%;"></a>
+            <a href="https://www.instagram.com/tithighosh04/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="insta" width="20px" height="20px"></a>
+            <a href="https://github.com/TithiGhosh18"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" width="20px" height="20px"></a>
+        </li>
+    </ul>
+</div>
+</div>
+   
+<div class="copyright">
+    <p>copyright©-WeatherWiz2024 All rights reserved</p>
+</div>
+   </footer>
+   <script src="new2.js"></script>  
+</body>
+</html>

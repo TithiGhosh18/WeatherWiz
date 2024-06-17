@@ -1,0 +1,262 @@
+.mainbody {
+    margin-top: 80px;
+    margin-bottom: 0%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     z-index: -1;
+    min-width:min-content;
+    justify-content: center;
+    align-items: center;
+    display:grid;
+    
+     /* Make sure main_body content is above the pseudo-element */
+}
+
+body{
+    margin: 0%;
+    bottom: 0;
+    min-width:200px;
+}
+.mainbody::before {
+    content: "";
+    background: url(newgame/skybackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: absolute;
+    min-width:min-content;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: -1; /* Adjust the opacity as needed */
+   /* Place the pseudo-element behind the main content */
+}
+
+/* Ensure that .location and other content elements are positioned correctly */
+.location, .forecast, .footermain {
+    position: relative;
+    z-index: 2;
+    min-width:min-content; /* Make sure these elements are above the pseudo-element */
+}
+#lastupdate{
+    font-size: small;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* The rest of your CSS remains the same */
+.location {
+    display: flex;
+    margin: 10px;
+    width: 900px;
+    height: 100px;
+    min-width: 100px;
+    min-block-size: 100px;
+}
+
+.datedaynight {
+    padding: 7px;
+    height: 230px;
+    margin: 5px;
+}
+
+.dayforecast, .nightforecast {
+    padding: 7px;
+    margin: 2px;
+    height: 70px;
+    width: 900px;
+    border-radius: 4px;
+    
+    opacity: 0.6; /* Adjust the opacity as needed */
+    border: 1px solid rgb(124, 124, 124);
+    font-weight: bold;
+    color: #000000;
+}
+.dayforecast{
+    background-color: #97dcf4;
+    display: flex;
+    min-width: 100px;
+}
+.nightforecast{
+    background-color: #64cff3;
+    display: flex;
+}
+.container{
+    display: flex;
+    padding-left: 50px;
+}
+.container2{
+    display: flex;
+    padding-left: 38px;
+}
+.forecastfeellike{
+    display: flex;
+    font-size: x-small;
+    padding-top: 30px;
+    margin:3px;
+    width: 300px;
+    min-width: 100px;
+}
+.feellike {
+    display: flex;
+    font-size: x-small;
+}
+
+#feelvalue {
+    margin-left: 3px;
+}
+
+#temp {
+    height: 40px;
+    margin-bottom: 0%;
+}
+
+#localtime {
+    margin-top: 0%;
+    font-size: small;
+    margin-left: 20px;
+}
+
+#actuallocation {
+    margin-bottom: 0%;
+}
+.forextainfo{
+    width: 250px;
+}
+
+
+.wind{
+    display: flex;
+}
+.Humidity{
+    display: flex;
+}
+.Visibility{
+    display: flex;
+}
+footer{
+    top: 0;
+}
+
+@media only screen and (max-width: 1276px) {
+    body{
+        font-size: xx-small;
+    }
+     #messege{
+        width:30px;
+        font-size: 20%;
+        height: 30px;
+    }
+    .lastmsg{
+        width: min-content;
+    }
+    .getintouch{
+        width:fit-content;
+    }
+    footer{
+        font-size: 20%;
+        height:min-content;
+        right:0;     
+        margin: 0%;   
+    }
+    .footermain{
+        height: min-content;
+        margin: 0%;
+        width: fit-content;
+    }
+    #para{
+        font-size:20%;
+    }
+    .info ul{
+        padding-left: 0%;
+    }
+    
+    .info{
+        height: min-content;
+        width: 90px;
+    }
+    #msgbtn{
+        font-size: 20%;
+    }
+    .copyright{
+        font-size: 20%;
+
+    }
+    
+    .company{
+        height: min-content;
+    }
+    .owner ul li  a img{
+        width: 10px;
+        height: 10px;
+        display: block;
+        
+    }
+    .owner ul{
+        padding-left: 0%;
+    }
+    .owner.ul.li img{
+        flex-wrap: wrap;
+    }
+    .lastmsg{
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    .weather-heading{
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+    .search{
+        flex-wrap: wrap;
+        height: min-content;
+    }
+    #searchbar{
+        width:100px;
+        margin-bottom: 10px;
+    }
+   }
+
+   @media only screen and (max-width: 925px) {
+    
+    
+    .dayforecast,.nightforecast{
+        width: fit-content;
+        justify-content: center;
+
+    }
+    .forecastfeellike{
+        width: min-content;
+        margin-right: 0%;
+    }
+    .datedaynight{
+        width:fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainbody {
+        margin-top: 160px;
+        width: fit-content;
+        height: fit-content;
+    
+    }
+    .forecast{
+        width: min-content;
+    }
+    body{
+        width: min-content;
+    }
+    html{
+        width: 100%;
+    }
+    #para{
+        width: 200px;
+    }
+    .company{
+        width: min-content;
+    }
+   }

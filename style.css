@@ -1,0 +1,629 @@
+body{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0%;
+}
+header{
+    position:fixed;
+    margin-bottom: 10px;
+    top:0;
+    z-index: 1;
+    display: flex;
+    left: 0%;
+    width: 100%;
+    min-width:10%;
+    background: linear-gradient(45deg,rgb(181, 226, 243),rgba(2, 155, 238, 0.775));
+   
+    
+}
+
+.heading{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    color:rgb(123, 123, 123);
+}
+
+.weather-heading{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top:15px;
+    padding: 5px;
+    height:auto;
+    cursor:pointer;
+}
+
+.links{
+    display: flex;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    margin-bottom:5px;
+    margin-top: 20px;
+    margin-top: 5px;
+}
+.link{
+    text-decoration: none;
+    margin: 5px;
+    padding: 15px;
+    font-size:13px;
+    color: white;
+    border-radius: 16cm;
+}
+.link:hover{
+    background-color: rgb(215, 211, 211);
+    
+}
+
+
+
+
+
+.main_body{
+    background-color: rgb(226, 225, 225);
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-size: cover;
+    position: relative;
+    margin-top: 80px;
+    display:flex;
+    flex-wrap:nowrap;
+}
+.todayweather,  .tomorrowweather{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width:50%;
+    max-width: 100%;
+    background:linear-gradient(rgb(255, 255, 255),rgb(107, 188, 232));
+    
+}
+.todayweather{
+    margin-right: 10px;
+
+}
+.tomorrowweather{
+    margin-left: 10px;
+}
+@media only screen and (max-width: 820px) {
+    .heading{
+        width:min-content;
+        font-size: small;
+        flex-wrap: wrap;
+    }
+    .main_body {
+        flex-wrap: wrap;
+        
+      }
+      .header{
+         min-width:fit-content;
+      }
+     .todayweather,.tomorrowweather {
+        width: 100%;
+        
+      }
+      #searchbar{
+         min-width: 100px;
+      }
+    
+}
+
+
+   @media only screen and (max-width: 830px) {
+    .main_body{
+        margin-top: 150px;
+    }
+    .links{
+        flex-wrap:wrap ;
+        width:min-content;
+    }
+
+   }
+
+
+#howtouse:hover{
+    background-color:  rgb(7, 99, 170);
+    color: white;
+    box-shadow: 10px white;
+}
+#linkss:hover{
+    background-color:  rgb(7, 99, 170);
+    color: white;
+}
+.search{
+    display: flex;
+   margin-top: 26px;
+   align-items: center;
+   padding: 5px;
+}
+#searchbar{
+    padding:10px;
+    border-radius: 10px;
+    width:300px;
+    min-width: 10px;
+    background-color: rgb(187, 226, 254);
+    
+
+}
+#searchButton{
+    margin-left: 4px;
+    margin-bottom: 0%;
+    border-radius: 50%;
+    background-image: "newgame/right-arrow_275161.png";
+    background-color: rgb(7, 99, 170);
+    color: white;
+    
+}
+#searchButton:hover{
+    background-color: rgb(4, 59, 101);
+}
+
+#dropdown-products a{
+    background: linear-gradient(90deg,rgb(232, 249, 255),rgb(97, 193, 245));
+
+}
+
+.place,.place2{
+    cursor: pointer;
+
+}
+.place:hover {
+    opacity:0.5;
+    
+}
+.place2:hover{
+    opacity:0.5;
+}
+
+
+.todayweather:hover,.tomorrowweather:hover{
+box-shadow:0 0 10px rgb(74, 152, 241);
+}
+
+.highlow{
+    display: flex;
+}
+.current-temp-written{
+    font-size: smaller;
+    
+}
+.avg-temp-written{
+    font-size: smaller;
+    
+}
+
+#feels-like{
+    font-size: x-small;
+    padding: none;
+    margin: 2px;
+    
+    align-items: center;
+    
+}
+#Tom-feels-like{
+    font-size: x-small;
+    padding: none;
+    margin: 2px;
+    
+    align-items: center;
+    
+}
+.textbox{
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgb(239, 239, 142);
+    padding: 4px;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: x-small;
+    align-items: center;
+    text-align: center;
+    position: static;
+    left: 100px;
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 16px;
+}
+.Tom-textbox{
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgb(239, 239, 142);
+    padding: 4px;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: x-small;
+    align-items: center;
+    text-align: center;
+    position: static;
+    left: 100px;
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 16px;
+
+}
+.temp{
+    align-items: center;
+}
+
+.condition{
+   font-size: xx-small;
+   display: flex;
+   justify-content: center;
+}
+#conditiontext{
+    margin-top: 23px;
+}
+.Tom-condition{
+    font-size: xx-small;
+    display: flex;
+    justify-content: center;
+}
+#Tom-conditiontext{
+     margin-top: 23px;
+}
+.tp{
+    display:flex;
+    justify-content: center;
+}
+#highlow{
+    font-size: xx-small;
+    margin-top: 26px;
+    margin-left: 3px;
+}
+#Tom-highlow{
+    font-size: xx-small;
+    margin-top: 26px;
+    margin-left: 3px;
+}
+#thermo-icon{
+    height: 15px;
+    width: 8px;
+}
+#Tom-thermo-icon{
+    height: 15px;
+    width: 8px;
+}
+.feel{
+    display: flex;
+    justify-content: center;
+}
+.Tom-feel{
+    display: flex;
+    justify-content: center;
+}
+.forecast-container {
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    min-width: 100px;
+    text-align: center;
+    font-size: xx-small;
+    margin-top: 25px;
+    margin-right: 10px;
+    justify-content: center;
+}
+.Tom-forecast-container {
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 620px;
+    min-width: 100px;
+    text-align: center;
+    font-size: xx-small;
+    margin-top: 25px;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.hourly-forecast {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    
+}
+.Tom-hourly-forecast {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.forecast-hour {
+    flex: 0 0 100px;
+    padding: 10px;
+    border-radius: 8px;
+    background: linear-gradient(45deg,rgb(232, 249, 255),rgb(97, 193, 245));
+    margin: 10px;
+    text-align: center;
+    width:fit-content;
+}
+.Tom-forecast-hour {
+    flex: 0 0 100px;
+    padding: 10px;
+    border-radius: 8px;
+    background: linear-gradient(45deg,rgb(232, 249, 255),rgb(58, 178, 242));
+    margin: 10px;
+    text-align: center;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.hour {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.temperature {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.description {
+    font-size: 0.9em;
+    color: #555;
+}
+.extrainfo{
+    display: flex;
+    justify-content: center;
+}
+.humidity,.uv,.airpressure,.visibility{
+    font-size: small;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid;
+    box-shadow: 0 0 5px rgb(65, 65, 65);
+    margin: 5px;
+    height: 100px;
+    width:100px;
+}
+.apvalue,.v-value{
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+.uvvalue{
+    justify-content: center;
+}
+#msg{
+    font-size: xx-small;
+    margin-left: 3px;
+    margin-top: 20px;
+    margin-right: 0px;
+    padding: 0%;
+
+}
+#msg{
+    font-size: xx-small;
+    margin-left: 3px;
+    margin-top: 18px;
+    margin-right: 0px;
+    padding: 0%;
+
+}
+.sun_rise_set{
+    display: flex;
+    justify-content: center;
+}
+.sunrise,.sunset{
+    font-size: small;
+    height: 60px;
+    width: 100px;
+    padding: 38px;
+    padding-top: 10px;
+    margin: 20px;
+    box-shadow: 0 0 15px rgb(2, 123, 175);
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 6px;
+}
+a:hover{
+box-shadow:  0 0 10px rgb(131, 129, 129);
+}
+/* Basic styling for the links */
+.links {
+    position: relative;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Hide the dropdown by default */
+#dropdown-products {
+    display: none;
+    position:absolute;
+    top:75%;
+    left: 50%;
+    background-color: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+#dropdown-products li {
+    border-bottom: 1px solid #ddd;
+}
+
+#dropdown-products li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+#dropdown-products li a:hover {
+    background-color: none;
+}
+
+/* Show the dropdown when hovering over the "Popular cities" link */
+.link:hover + #dropdown-products,
+#dropdown-products:hover {
+    display: block;
+}
+
+footer{
+   width:100%;
+    height: 220px;
+    background: linear-gradient(180deg,rgb(181, 226, 243),rgb(84, 178, 228));
+    bottom: 0%;
+    max-height: 700px;
+    max-width: 200%;
+    color: rgb(255, 255, 255);
+   
+}
+.footermain{
+    display: flex;
+    bottom: 0%;
+    height: 170px;
+}
+.company{
+    margin: 10px;
+    width: 400px;
+}
+#weatherwiz{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#para{
+    top: 0%;
+    margin-top: 0%;
+    color: gray;
+}
+.info{
+    width:250px;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+.info ul li a{
+    justify-content: center;
+    display: block;
+    text-align: center;
+    color: #ddd;
+    font-weight: 800;
+    width:100px;
+
+}
+.info ul{
+    list-style-type: none;
+}
+.getintouch{
+    width: 350px;
+    margin-top: 0%;
+    justify-content: center;
+   
+    
+}
+#msgbtn{
+    padding: 5px;
+    border-radius: 7px;
+}
+#msgbtn:hover{
+    background-color:#c2c2c2;
+    cursor: pointer;
+}
+#messege{
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    min-width: 100px;
+    
+   
+
+}
+.owner ul{
+    list-style-type: none;
+}
+.copyright{
+    margin: 0%;
+    top: 0;
+    padding: 0%;
+    text-align: center;
+    font-size: small;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: xx-small;
+    }
+     #messege{
+        width:30px;
+        font-size: 20%;
+        height: 30px;
+    }
+    footer{
+        font-size: 20%;
+        height:min-content;
+        right:0;        
+    }
+    .footermain{
+        height: min-content;
+    }
+    #para{
+        font-size:20%;
+    }
+    .info ul{
+        padding-left: 0%;
+    }
+    
+    .info{
+        height: min-content;
+        width: 90px;
+    }
+    #msgbtn{
+        font-size: 20%;
+    }
+    .copyright{
+        font-size: 20%;
+
+    }
+    .company{
+        height: min-content;
+    }
+    .owner ul li  a img{
+        width: 10px;
+        height: 10px;
+        
+    }
+    .owner ul{
+        padding-left: 0%;
+    }
+    .lastmsg{
+        flex-wrap: wrap;
+    }
+    .weather-heading{
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+    .search{
+        flex-wrap: wrap;
+        height: min-content;
+    }
+    #searchbar{
+        width:100px;
+        margin-bottom: 10px;
+    }
+   }
